@@ -11,7 +11,7 @@ jobs:
 
     steps:
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Compilation
         run: |
           sudo dpkg --add-architecture i386 && sudo apt update
