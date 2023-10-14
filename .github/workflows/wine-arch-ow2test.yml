@@ -23,7 +23,7 @@ jobs:
           su user -c "yes|PKGDEST=/tmp/wine-tkg makepkg --noconfirm -s"
 
       - name: Archive the artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: wine-tkg-build
           path: /tmp/wine-tkg
